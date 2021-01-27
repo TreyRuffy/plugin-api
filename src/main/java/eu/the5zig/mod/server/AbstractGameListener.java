@@ -182,6 +182,14 @@ public abstract class AbstractGameListener<T extends GameMode> {
 	}
 
 	/**
+	 * Called, whenever the client switches worlds.
+	 *
+	 * @param gameMode  the current game mode instance.
+	 */
+	public void onWorldSwitch(T gameMode){
+	}
+
+	/**
 	 * @return an utility class that holds all registered listeners.
 	 */
 	public final GameListenerRegistry getGameListener() {
